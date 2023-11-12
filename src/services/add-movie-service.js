@@ -25,19 +25,21 @@ class AddMovieService
     {
       return axios.get(URL+"/movie/"+name);
     }
+    
     getMovieByTheatreName(tname)
     {
       return axios.get(URL+"/theatre/"+tname);  
     }
+
     fnSearch(movies){
       return movies;
     }
-    
+
     deleteMovie(id)
     {
       return axios.delete(URL+"/"+id);
     }
-
+    
     modifyMovieticket(movie)
     { 
       return axios.put(URL+"/tickets",movie);    

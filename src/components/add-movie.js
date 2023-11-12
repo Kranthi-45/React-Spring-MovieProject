@@ -56,8 +56,7 @@ export default class AddMovie extends Component
         {   
             this.readFileDataAsBase64(event).then((data)=>{
                 this.setState({picture:data, posterSelected : false,});
-                this.selectedFile=event.target.files[0];
-                
+                this.selectedFile=event.target.files[0];           
             })
         }
         console.log(this.state);
