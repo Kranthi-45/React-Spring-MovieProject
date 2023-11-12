@@ -9,7 +9,7 @@ export default class SignUp extends Component
     constructor(props)
     {
         super(props);
-        this.state={username:'',email:'',phone:'',gender:'',password:'', otp:'' , disabled:true, otpsent: false ,signUpSuccess: true};
+        this.state={username:'',email:'',phone:'',gender:'',password:'', otp:'' , disabled:true, otpsent: false ,signUpSuccess: false};
         this.changeHandler=this.changeHandler.bind(this);
         this.signUp=this.signUp.bind(this);
         this.fnGenerateOtp=this.fnGenerateOtp.bind(this);
