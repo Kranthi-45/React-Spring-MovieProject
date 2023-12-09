@@ -1,6 +1,7 @@
 import React, { Component} from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/payment.css';
+import { UI_BASE_ROUTE_URL } from '../constants';
 //var price = 0;
 export default class Payment extends Component {
   
@@ -12,7 +13,7 @@ export default class Payment extends Component {
 
   }
   confirmPayment= () => {
-    window.location.href="http://localhost:3000/invoice";
+    window.location.href=`${UI_BASE_ROUTE_URL}/invoice`;
   };
   componentDidMount()
   {

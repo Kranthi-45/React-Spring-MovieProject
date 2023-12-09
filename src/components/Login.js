@@ -1,6 +1,7 @@
 import { Component } from "react";
 import '../styles/Login.css';
 import loginService from "../services/login-service";
+import { UI_BASE_ROUTE_URL } from "../constants";
 // import { Navigate } from "react-router-dom"
 export default class Login extends Component
 {
@@ -30,9 +31,9 @@ export default class Login extends Component
                 sessionStorage.setItem("user",JSON.stringify(response.data));
                 this.setState({invalidCreds: false});
                 if(response.data.role === "user"){
-                    window.location.href="http://localhost:3000/homeuser";
+                    window.location.href=`${UI_BASE_ROUTE_URL}/homeuser`;
                 }else{
-                    window.location.href="http://localhost:3000/homeadmin";
+                    window.location.href=`${UI_BASE_ROUTE_URL}/homeadmin`;
                 }
             }else{
                 this.setState({invalidCreds: true});

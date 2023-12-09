@@ -7,6 +7,7 @@ import payBookService from "../services/payBook-service";
 
 
 import '../styles/book-movie.css';
+import { UI_BASE_ROUTE_URL } from "../constants";
 
 var book ={}
 export default class BookMovie extends Component
@@ -129,7 +130,7 @@ export default class BookMovie extends Component
                 console.log(response.data);
                });
                payBookService.bookTicket(book);  
-               window.location.href="http://localhost:3000/payment";
+               window.location.href=`${UI_BASE_ROUTE_URL}/payment`;
         },(error)=>{
             console.log(error)
         });

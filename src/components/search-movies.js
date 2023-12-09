@@ -3,6 +3,7 @@ import '../styles/theatre.css';
 import theatreService from "../services/theatre-service";
 import addMovieService from "../services/add-movie-service";
 import { Link } from "react-router-dom";
+import { UI_BASE_ROUTE_URL } from "../constants";
 
 
 export default class SearchMovies extends Component
@@ -62,7 +63,7 @@ export default class SearchMovies extends Component
     if(localStorage.getItem("user")==null){
         this.setState({bookSelected:  true});
     }else{
-        window.location.href="http://localhost:3000/booking";
+        window.location.href=`${UI_BASE_ROUTE_URL}/booking`;
         }
     }
     render()

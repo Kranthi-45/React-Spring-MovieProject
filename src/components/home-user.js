@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../styles/home-user.css';
 import movieService from "../services/movie-service";
 import { Link } from 'react-router-dom';
+import { UI_BASE_ROUTE_URL } from '../constants';
 
 export default class HomeUser extends Component{
 
@@ -23,7 +24,7 @@ export default class HomeUser extends Component{
   }
 
   book(){
-    window.location.href="http://localhost:3000/bookmovie";
+    window.location.href=`${UI_BASE_ROUTE_URL}/bookmovie`;
   }
 
     render()

@@ -3,6 +3,7 @@ import '../styles/main-home.css';
 import addMovieService from "../services/add-movie-service";
 import Carousel from './carousel';
 import { Link } from 'react-router-dom';
+import { UI_BASE_ROUTE_URL } from '../constants';
 
 export default class MainHome extends Component{
   constructor(props)
@@ -75,7 +76,7 @@ login = (event) => {
             }
          })
 
-        window.location.href = "http://localhost:3000/login";
+        window.location.href = `${UI_BASE_ROUTE_URL}/login`;
     }else{
     this.setState({disabled: true});
     }
