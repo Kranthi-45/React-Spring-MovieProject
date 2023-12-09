@@ -15,12 +15,7 @@ const AboutUs = (props) => {
         </p>
         <p  style= { { fontStyle: 'italic', color : 'white', fontSize : 27 }} >We are....... </p>
             <p id="devnames">
-  
-                Bolli Kranthi Kumar (Admin) <br/>
-                Ramadevi  <br/>
-                Sai Dhiraj <br/>
-                Chandu Hasini <br/>
-                Bharadwaj <br/>
+                Bolli Kranthi Kumar <br/>
             </p>
   
     </div> <br/><br/><br/>
