@@ -1,6 +1,8 @@
 import axios from "axios";
+import { BASE_API_URL } from "../constants";
 
-const URL='http://localhost:8080/movie';
+const URL = `${BASE_API_URL}/movie`;
+// const URL= BASE_API_URL + 'http://localhost:8080/movie';
 class AddMovieService
 {
     addmovie(movie)

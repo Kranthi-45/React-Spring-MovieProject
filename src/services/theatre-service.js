@@ -1,6 +1,8 @@
 import axios from "axios";
+import { BASE_API_URL } from "../constants";
 
-const URL='http://localhost:8080/theatre';
+const URL = `${BASE_API_URL}/theatre`;
+// const URL='http://localhost:8080/theatre';
 class TheatreService
 {
     addTheatre(theatre)

@@ -1,6 +1,8 @@
 import axios from "axios";
+import { BASE_API_URL } from "../constants";
 
-const URL='http://localhost:8080/user';
+const URL = `${BASE_API_URL}/user`;
+// const URL='http://localhost:8080/user';
 class LoginService
 {
     login(username, password, role)

@@ -1,6 +1,9 @@
 import axios from "axios";
+import { BASE_API_URL } from "../constants";
 
-const URL='http://localhost:8080/book';
+const URL = `${BASE_API_URL}/book`;
+// const URL='http://localhost:8080/book';
+
 class BookMovieService
 {
     bookTicket(book)
